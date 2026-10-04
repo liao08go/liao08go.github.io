@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de IVA en España: añadir y quitar IVA 21 %, 10 % y 4 %</title>
+<meta name="description" content="Calcula el IVA en España: añade o quita el 21 %, 10 % o 4 % y obtén base imponible, cuota y total.">
+<link rel="canonical" href="https://liao08go.github.io/calculadora-iva.html">
+<link rel="stylesheet" href="/style.css">
+<meta name="google-adsense-account" content="ca-pub-5765866012796773">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5765866012796773" crossorigin="anonymous"></script>
+</head><body>
+<header class="top"><a class="brand" href="/">Cuentario</a>
+<nav><a href="/">Herramientas</a><a href="/sueldario.html">Sueldario</a><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/contacto.html">Contacto</a></nav></header>
+<main>
+<article>
+<h1>Calculadora de IVA</h1>
+<p class="lead">Añade el IVA a una base imponible o extráelo de un precio final.</p>
+<section class="tool" aria-label="Calculadora de IVA">
+<label>Operación<select id="mode"><option value="add">Tengo la base: añadir IVA</option><option value="rem">Tengo el total: quitar IVA</option></select></label>
+<label>Importe (€)<input id="amt" type="number" inputmode="decimal" step="any" min="0"></label>
+<label>Tipo de IVA<select id="rate"><option value="21">21 % (general)</option><option value="10">10 % (reducido)</option><option value="4">4 % (superreducido)</option></select></label>
+<button id="go" type="button">Calcular</button>
+<dl id="out" role="status" aria-live="polite"></dl>
+</section>
+<h2>Cómo se calcula</h2>
+<p>Con base imponible B y tipo t: cuota = B × t / 100 y total = B + cuota. Si partes del total T: base = T / (1 + t/100) y cuota = T − base.</p>
+<h2>Ejemplos resueltos</h2>
+<p>Base de 100 € al 21 %: cuota 21 € y total 121 €. Total de 121 € al 21 %: base 121 / 1,21 = 100 € y cuota 21 €.</p>
+<h2>Qué tipo corresponde</h2>
+<p>La Agencia Tributaria indica que el tipo general es el 21 % y que los reducidos vigentes son el 10 % y el 4 %. Qué tipo se aplica a cada producto o servicio lo fija la ley del IVA; consúltalo en la <a href="https://sede.agenciatributaria.gob.es/Sede/iva/calculo-iva-repercutido-clientes/tipos-impositivos-iva.html" rel="noopener">página oficial de tipos de IVA</a>. Esta herramienta es solo aritmética: no decide qué tipo te corresponde.</p>
+<h2>Preguntas frecuentes</h2>
+<h3>¿Sirve para Canarias, Ceuta y Melilla?</h3><p>No. El IVA español se aplica en la Península y Baleares; Canarias tiene IGIC y Ceuta y Melilla régimen propio.</p>
+<h3>¿Redondea?</h3><p>Muestra los importes con dos decimales. Para facturas, usa el redondeo que indique tu programa de facturación.</p>
+<p class="meta">Última revisión: 2026-10-04. Fuente de tipos: Agencia Tributaria.</p>
+</article>
+<script src="/iva.js"></script></main>
+<footer><nav>
+<a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a><a href="/contacto.html">Contacto</a>
+</nav><p>&copy; 2026 Xian Rui Wang</p></footer>
+</body></html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Días entre dos fechas: calculadora y suma de días</title>
+<meta name="description" content="Calcula cuántos días hay entre dos fechas o qué fecha resulta al sumar o restar días.">
+<link rel="canonical" href="https://liao08go.github.io/dias-entre-fechas.html">
+<link rel="stylesheet" href="/style.css">
+<meta name="google-adsense-account" content="ca-pub-5765866012796773">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5765866012796773" crossorigin="anonymous"></script>
+</head><body>
+<header class="top"><a class="brand" href="/">Cuentario</a>
+<nav><a href="/">Herramientas</a><a href="/sueldario.html">Sueldario</a><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/contacto.html">Contacto</a></nav></header>
+<main>
+<article>
+<h1>Días entre dos fechas</h1>
+<p class="lead">Cuenta los días naturales entre dos fechas o calcula una fecha futura o pasada.</p>
+<section class="tool" aria-label="Días entre fechas">
+<h2>Días entre dos fechas</h2>
+<label>Fecha inicial<input id="d1" type="date"></label>
+<label>Fecha final<input id="d2" type="date"></label>
+<button id="go1" type="button">Contar días</button>
+<p id="r1" role="status" aria-live="polite"></p>
+</section>
+<section class="tool" aria-label="Sumar días">
+<h2>Sumar o restar días</h2>
+<label>Fecha de partida<input id="d3" type="date"></label>
+<label>Días (negativo para restar)<input id="n" type="number" step="1" value="30"></label>
+<button id="go2" type="button">Calcular fecha</button>
+<p id="r2" role="status" aria-live="polite"></p>
+</section>
+<h2>Cómo se calcula</h2>
+<p>Se convierten las fechas a días del calendario y se resta una de otra. Se cuentan días naturales: no se descuentan sábados, domingos ni festivos, que cambian según la comunidad y el año. El día inicial no se cuenta; si necesitas contarlo, suma 1.</p>
+<h2>Ejemplo resuelto</h2>
+<p>Del 1 al 31 de enero hay 30 días. Sumar 30 días al 1 de enero da el 31 de enero.</p>
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuenta días hábiles?</h3><p>No. Solo días naturales.</p>
+<h3>¿Importa el año bisiesto?</h3><p>Sí, y la herramienta lo tiene en cuenta porque usa el calendario real.</p>
+<p class="meta">Última revisión: 2026-10-04.</p>
+</article>
+<script src="/fechas.js"></script></main>
+<footer><nav>
+<a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a><a href="/contacto.html">Contacto</a>
+</nav><p>&copy; 2026 Xian Rui Wang</p></footer>
+</body></html>

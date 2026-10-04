@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Calculadora de finiquito 2026 · Cuánto cobrar al dejar la empresa</title>
+<meta name="description" content="Calcula tu finiquito en 2026: salario pendiente, pagas extra y vacaciones no disfrutadas, con IRPF y Seguridad Social. Gratis y sin registro.">
+<link rel="canonical" href="https://liao08go.github.io/sueldario-finiquito.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0E1C2A">
+<meta name="google-adsense-account" content="ca-pub-5765866012796773">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5765866012796773" crossorigin="anonymous"></script>
+<link rel="icon" href="sueldario-favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Sueldario"><meta property="og:title" content="Calculadora de finiquito 2026 · Cuánto cobrar al dejar la empresa">
+<meta property="og:description" content="Calcula tu finiquito en 2026: salario pendiente, pagas extra y vacaciones no disfrutadas, con IRPF y Seguridad Social. Gratis y sin registro."><meta property="og:url" content="https://liao08go.github.io/sueldario-finiquito.html">
+<meta name="twitter:card" content="summary">
+<style>:root{
+  --bg:#F1F4F7; --paper:#FFFFFF; --ink:#0E1C2A; --muted:#556676; --line:#D3DBE3; --soft:#E7ECF1;
+  --neto:#0A8A63; --irpf:#E09B00; --ss:#3454D1; --emp:#8593A1; --focus:#3454D1;
+  --serif:Charter,"Bitstream Charter","Sitka Text",Cambria,"Iowan Old Style",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B131B; --paper:#121D28; --ink:#E9EFF4; --muted:#95A6B6; --line:#25364A; --soft:#182636;
+  --neto:#35C896; --irpf:#F3B53A; --ss:#7F99FF; --emp:#7A8997; --focus:#9DB1FF;
+}}
+:root[data-theme="dark"]{
+  --bg:#0B131B; --paper:#121D28; --ink:#E9EFF4; --muted:#95A6B6; --line:#25364A; --soft:#182636;
+  --neto:#35C896; --irpf:#F3B53A; --ss:#7F99FF; --emp:#7A8997; --focus:#9DB1FF;
+}
+*{box-sizing:border-box}
+html{height:100%;-webkit-text-size-adjust:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:400 1rem/1.6 var(--sans);
+  padding:env(safe-area-inset-top,0px) env(safe-area-inset-right,0px) env(safe-area-inset-bottom,0px) env(safe-area-inset-left,0px)}
+a{color:var(--ss);text-underline-offset:3px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:6px;z-index:9}
+.skip:focus{left:12px}
+
+/* Cabecera */
+.top{border-bottom:1px solid var(--line);background:var(--paper)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font:700 1.3rem/1 var(--serif);color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px;letter-spacing:-.01em}
+.brand svg{width:28px;height:28px;flex:none}
+.top nav{display:flex;gap:4px;flex-wrap:wrap}
+.top nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;font-size:.95rem}
+.top nav a:hover,.top nav a[aria-current]{color:var(--ink);background:var(--soft)}
+
+/* Hero + calculadora */
+.hero{padding:44px 0 20px}
+h1{font:700 clamp(2rem,5.2vw,3.4rem)/1.08 var(--serif);letter-spacing:-.02em;margin:0 0 14px;max-width:18ch}
+.lead{font-size:1.1rem;color:var(--muted);max-width:56ch;margin:0}
+.calc{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:28px;align-items:start;margin:30px 0 8px}
+@media (max-width:860px){.calc{grid-template-columns:1fr}}
+.form{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px;display:grid;gap:18px}
+.field label,.field legend{display:block;font-weight:600;font-size:.92rem;margin:0 0 6px;padding:0}
+fieldset.field{border:0;margin:0;padding:0;min-width:0}
+.hint{font-size:.82rem;color:var(--muted);margin:5px 0 0}
+.seg{position:relative;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;background:var(--soft);border-radius:10px;padding:3px;gap:3px}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg label{margin:0;text-align:center;padding:9px 6px;border-radius:8px;font-weight:600;font-size:.9rem;color:var(--muted);cursor:pointer;line-height:1.2}
+.seg input:checked+label{background:var(--paper);color:var(--ink);box-shadow:0 1px 3px rgba(14,28,42,.18)}
+.seg input:focus-visible+label{outline:3px solid var(--focus);outline-offset:1px}
+.money{position:relative}
+.money input{width:100%;font:600 1.7rem/1.2 var(--serif);font-variant-numeric:tabular-nums;padding:12px 44px 12px 14px;border:2px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+.money input:focus{border-color:var(--focus);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--focus) 25%,transparent)}
+.money span{position:absolute;right:16px;top:50%;transform:translateY(-50%);font:600 1.3rem var(--serif);color:var(--muted)}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.chips button{font:600 .82rem var(--sans);padding:6px 11px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.chips button:hover{color:var(--ink);border-color:var(--muted)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+select,.num{width:100%;font:500 1rem var(--sans);padding:10px 12px;border:2px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+select:focus,.num:focus{border-color:var(--focus);outline:none}
+
+/* Resultado */
+.result{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:26px 26px 22px}
+.big-label{font-size:.95rem;color:var(--muted);margin:0}
+.big{font:700 clamp(3rem,8.5vw,5.2rem)/1 var(--serif);letter-spacing:-.03em;font-variant-numeric:tabular-nums lining-nums;margin:4px 0 2px;color:var(--ink)}
+.big small{font:600 1.1rem var(--sans);letter-spacing:0;color:var(--muted);margin-left:8px}
+.sub{color:var(--muted);margin:0 0 22px;font-size:1rem}
+.sub b{color:var(--ink);font-variant-numeric:tabular-nums}
+.bar{display:flex;height:34px;border-radius:8px;overflow:hidden;background:var(--soft);gap:2px}
+.bar i{display:block;height:100%;min-width:0;transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.bar .b-neto{background:var(--neto)}.bar .b-irpf{background:var(--irpf)}.bar .b-ss{background:var(--ss)}
+.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:12px 0 22px}
+@media (max-width:520px){.legend{grid-template-columns:1fr}}
+.legend div{font-size:.88rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start;line-height:1.3}
+.legend i{width:12px;height:12px;border-radius:3px;margin-top:2px;flex:none}
+.legend b{display:block;color:var(--ink);font-size:1rem;font-variant-numeric:tabular-nums}
+.sheet{margin:0;padding:0;list-style:none;border-top:2px solid var(--ink)}
+.sheet li{display:flex;align-items:flex-start;gap:8px;padding:9px 0;border-bottom:1px solid var(--soft)}
+.sheet .leader{flex:1;align-self:flex-start;height:1.15rem;border-bottom:2px dotted var(--line);min-width:12px}
+.sheet .v{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.sheet .l small{display:block;color:var(--muted);font-size:.8rem;font-weight:400;line-height:1.3}
+.sheet li.sum{border-bottom:2px solid var(--ink);font-weight:700}
+.sheet li.sum .v{font-family:var(--serif);font-size:1.15rem}
+.neg{color:var(--muted)}
+.note{font-size:.84rem;color:var(--muted);margin:16px 0 0}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.btn{font:600 .9rem var(--sans);padding:10px 16px;border-radius:10px;border:2px solid var(--ink);background:var(--ink);color:var(--bg);cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn:hover{opacity:.88}
+.badge{display:inline-block;background:color-mix(in srgb,var(--neto) 16%,transparent);color:var(--neto);font-weight:700;font-size:.82rem;padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:middle}
+.empresa{margin-top:18px;padding:14px 16px;background:var(--soft);border-radius:10px;font-size:.92rem;color:var(--muted)}
+.empresa b{color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* Contenido */
+main section.c{padding:44px 0 6px}
+h2{font:700 clamp(1.5rem,3.4vw,2.1rem)/1.15 var(--serif);letter-spacing:-.015em;margin:0 0 14px}
+h3{font:700 1.2rem/1.25 var(--serif);margin:26px 0 8px}
+.prose{max-width:70ch}
+.prose p{margin:0 0 14px}
+.prose li{margin-bottom:6px}
+.tablewrap{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:.95rem}
+th,td{padding:11px 16px;text-align:right;border-bottom:1px solid var(--soft);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+thead th{font-weight:700;border-bottom:2px solid var(--ink);background:var(--paper)}
+tbody tr:last-child td{border-bottom:0}
+caption{caption-side:bottom;text-align:left;padding:10px 16px;color:var(--muted);font-size:.84rem;white-space:normal}
+.faq details{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin-bottom:10px;padding:0 18px}
+.faq summary{cursor:pointer;font-weight:600;padding:15px 0;list-style:none;display:flex;justify-content:space-between;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:400 1.5rem/1 var(--sans);color:var(--muted)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin:0 0 16px;color:var(--muted);max-width:68ch}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px}
+.cols p{margin:0;color:var(--muted)}
+.cols h3{margin-top:0}
+.sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:8px}
+footer{margin-top:64px;border-top:1px solid var(--line);background:var(--paper);padding:30px 0 40px;color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer nav{display:flex;gap:6px 18px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+.page{padding:44px 0 0}
+.page h1{max-width:none;font-size:clamp(1.9rem,4.5vw,2.8rem)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{.top,footer,.form,.actions{display:none}.calc{display:block}body{background:#fff}}
+
+/* Ajustes v2 */
+.money input,.sheet .v,.num,input[type=date]{font-variant-numeric:lining-nums tabular-nums}
+input[type=date]{width:100%;font:500 1rem var(--sans);padding:10px 12px;border:2px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);min-height:46px}
+input[type=date]:focus{border-color:var(--focus);outline:none}
+.opt{border:1px dashed var(--line);border-radius:10px;padding:0 14px}
+.opt summary{cursor:pointer;font-weight:600;font-size:.92rem;padding:12px 0}
+.opt[open] summary{border-bottom:1px solid var(--soft);margin-bottom:14px}
+.opt .field{margin-bottom:14px}
+.alert{background:color-mix(in srgb,var(--irpf) 16%,transparent);border-left:4px solid var(--irpf);padding:12px 14px;border-radius:8px;font-size:.92rem;margin:0 0 18px}
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.tools a{display:block;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px;text-decoration:none;color:var(--ink)}
+.tools a:hover{border-color:var(--ink)}
+.tools strong{display:block;font:700 1.15rem var(--serif);margin-bottom:4px}
+.tools span{color:var(--muted);font-size:.93rem}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Sueldario – Calculadora de finiquito 2026","url":"https://liao08go.github.io/sueldario-finiquito.html","applicationCategory":"FinanceApplication","operatingSystem":"Any","inLanguage":"es-ES","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué incluye un finiquito?","acceptedAnswer":{"@type":"Answer","text":"El salario de los días trabajados y no cobrados, la parte proporcional de las pagas extra que no estén prorrateadas y las vacaciones devengadas y no disfrutadas. También pueden aparecer horas extra, comisiones u otros pluses pendientes."}},{"@type":"Question","name":"¿El finiquito es lo mismo que la indemnización?","acceptedAnswer":{"@type":"Answer","text":"No. El finiquito liquida lo que ya has ganado y se paga siempre que termina un contrato. La indemnización es una compensación adicional que solo corresponde en determinados casos, como algunos despidos o el fin de ciertos contratos temporales, y se calcula aparte con otros datos."}},{"@type":"Question","name":"¿Pagan IRPF y Seguridad Social por el finiquito?","acceptedAnswer":{"@type":"Answer","text":"Sí. Es salario, así que lleva retención de IRPF y cotizaciones a la Seguridad Social. La calculadora aplica a todo el importe el mismo tipo de IRPF que tendría tu nómina."}},{"@type":"Question","name":"¿Cómo se calculan las vacaciones no disfrutadas?","acceptedAnswer":{"@type":"Answer","text":"Se calculan los días devengados hasta tu fecha de baja, en proporción al tiempo trabajado en el año, y se restan los que ya has disfrutado. Cada día pendiente se paga según tu sueldo anual dividido entre 365 si son días naturales. Tu convenio puede fijar otra forma de cálculo."}},{"@type":"Question","name":"¿Cobro la parte proporcional de las pagas extra?","acceptedAnswer":{"@type":"Answer","text":"Sí, si tus pagas extra no vienen prorrateadas en la nómina. Normalmente se devengan por semestres (de enero a junio y de julio a diciembre), pero algunos convenios las devengan por años naturales. Si cobras en 12 pagas, ya las recibes cada mes y no hay nada que añadir."}},{"@type":"Question","name":"¿Puedo firmar el finiquito «no conforme»?","acceptedAnswer":{"@type":"Answer","text":"Sí. Si crees que falta algún concepto o que los importes no cuadran, puedes firmar indicando «no conforme» y reclamar después. Las reclamaciones derivadas del contrato de trabajo prescriben al año de terminarse el contrato, así que no conviene dejarlo pasar. Para tu caso concreto, consulta con un abogado laboralista o un sindicato."}},{"@type":"Question","name":"¿Qué pasa si dejo la empresa sin avisar con antelación?","acceptedAnswer":{"@type":"Answer","text":"Si tu convenio o contrato exige un plazo de preaviso y no lo cumples, la empresa puede descontar del finiquito los días de preaviso que falten. Esta calculadora no incluye ese descuento."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top"><div class="wrap">
+<a class="brand" href="sueldario.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0E1C2A"/><rect x="5" y="7" width="22" height="5" rx="2" fill="#0A8A63"/><rect x="5" y="14" width="15" height="5" rx="2" fill="#E09B00"/><rect x="5" y="21" width="9" height="5" rx="2" fill="#3454D1"/></svg>Sueldario</a>
+<nav aria-label="Principal"><a href="sueldario.html">Sueldo neto</a><a href="sueldario-finiquito.html" aria-current="page">Finiquito</a><a href="sueldario-como-se-calcula.html">Cómo se calcula</a><a href="sueldario-sobre-nosotros.html">Sobre nosotros</a><a href="/">Cuentario</a></nav>
+</div></header>
+<main id="main">
+
+<section class="hero"><div class="wrap">
+<h1>Calculadora de finiquito 2026</h1>
+<p class="lead">Calcula cuánto cobrarás al dejar una empresa: salario pendiente, pagas extra y vacaciones no disfrutadas, con IRPF y Seguridad Social. Todo se calcula en tu navegador.</p>
+<div class="calc">
+<form class="form" onsubmit="return false" aria-label="Datos para el cálculo del finiquito">
+  <div class="field"><label for="bruto">Sueldo bruto anual</label>
+    <div class="money"><input id="bruto" type="number" inputmode="decimal" min="0" max="1000000" step="100" value="24000"><span aria-hidden="true">€</span></div></div>
+  <fieldset class="field"><legend>Pagas al año</legend>
+    <div class="seg"><input type="radio" name="pagas" id="p14" value="14" checked><label for="p14">14 pagas</label><input type="radio" name="pagas" id="p12" value="12"><label for="p12">12 pagas (prorrateadas)</label></div></fieldset>
+  <div class="two">
+    <div class="field"><label for="inicio">Inicio del contrato</label><input id="inicio" type="date" value="2024-03-01"></div>
+    <div class="field"><label for="baja">Fecha de baja</label><input id="baja" type="date" value="2026-10-31"></div>
+  </div>
+  <div class="field"><label for="dias">Días del último mes pendientes de cobro</label>
+    <input class="num" id="dias" type="number" min="0" max="30" step="1" value="30"><p class="hint">Se rellena solo con la fecha de baja. Máximo 30. Pon 0 si ya te pagaron ese mes.</p></div>
+  <div class="two">
+    <div class="field"><label for="vac">Vacaciones al año (días)</label><input class="num" id="vac" type="number" min="1" max="60" step="1" value="30"></div>
+    <div class="field"><label for="disf">Ya disfrutadas este año</label><input class="num" id="disf" type="number" min="0" max="60" step="0.5" value="20"></div>
+  </div>
+  <fieldset class="field"><legend>Tipo de días de vacaciones</legend>
+    <div class="seg"><input type="radio" name="vtipo" id="v-n" value="nat" checked><label for="v-n">Naturales (30)</label><input type="radio" name="vtipo" id="v-l" value="lab"><label for="v-l">Laborables (22)</label></div></fieldset>
+  <fieldset class="field" id="devengo-box"><legend>Devengo de las pagas extra</legend>
+    <div class="seg"><input type="radio" name="devengo" id="d-s" value="sem" checked><label for="d-s">Semestral</label><input type="radio" name="devengo" id="d-a" value="anual"><label for="d-a">Anual</label></div>
+    <p class="hint">Semestral: verano de enero a junio y Navidad de julio a diciembre. Anual: ambas de enero a diciembre y aún sin cobrar. Mira tu convenio.</p></fieldset>
+  <details class="opt"><summary>Datos para el IRPF (opcional)</summary>
+    <fieldset class="field"><legend>Tipo de contrato</legend>
+      <div class="seg"><input type="radio" name="contrato" id="c-i" value="indefinido" checked><label for="c-i">Indefinido</label><input type="radio" name="contrato" id="c-t" value="temporal"><label for="c-t">Temporal</label></div></fieldset>
+    <div class="field"><label for="situacion">Situación familiar</label>
+      <select id="situacion"><option value="s3">Soltero/a, o casado/a con cónyuge con ingresos</option><option value="s1">Soltero/a con hijos a mi cargo exclusivo</option></select></div>
+    <div class="two">
+      <div class="field"><label for="hijos">Hijos</label><input class="num" id="hijos" type="number" min="0" max="8" step="1" value="0"></div>
+      <div class="field"><label for="menores3">De ellos, menores de 3</label><input class="num" id="menores3" type="number" min="0" max="8" step="1" value="0"></div>
+    </div>
+  </details>
+</form>
+
+<section class="result" aria-label="Resultado">
+  <p class="big-label">Finiquito neto estimado</p>
+  <div class="big" id="big"></div>
+  <p class="sub" id="sub" role="status" aria-live="polite"></p>
+  <p class="alert" id="alert" hidden></p>
+  <div class="bar" role="img" aria-label="Reparto del finiquito bruto entre neto, IRPF y Seguridad Social"><i class="b-neto" id="b-neto"></i><i class="b-irpf" id="b-irpf"></i><i class="b-ss" id="b-ss"></i></div>
+  <div class="legend">
+    <div><i style="background:var(--neto)"></i><span id="lg-neto"></span></div>
+    <div><i style="background:var(--irpf)"></i><span id="lg-irpf"></span></div>
+    <div><i style="background:var(--ss)"></i><span id="lg-ss"></span></div>
+  </div>
+  <ul class="sheet" id="sheet"></ul>
+  <p class="note">Estimación con el caso general. No incluye indemnización, horas extra, comisiones ni descuentos por preaviso, y tu convenio puede cambiar el cálculo. Si algo no cuadra con el finiquito que te entreguen, consulta con un profesional.</p>
+  <div class="actions"><button class="btn ghost" id="print" type="button">Imprimir</button></div>
+</section>
+</div>
+</div></section>
+
+<section class="c"><div class="wrap prose">
+<h2>Qué incluye un finiquito</h2>
+<p>El finiquito es la liquidación de lo que la empresa te debe cuando termina el contrato, sea por despido, dimisión o fin de contrato. Tiene tres partes habituales:</p>
+<ul>
+<li><strong>Salario pendiente:</strong> los días trabajados del último mes que aún no te han pagado.</li>
+<li><strong>Pagas extra:</strong> la parte proporcional de las pagas que has ido devengando y todavía no has cobrado, si no van prorrateadas.</li>
+<li><strong>Vacaciones no disfrutadas:</strong> los días devengados hasta tu salida y que no has llegado a coger.</li>
+</ul>
+<p>Además pueden aparecer horas extra, comisiones o pluses pendientes, que esta calculadora no incluye.</p>
+<h2 style="margin-top:34px">Finiquito e indemnización no son lo mismo</h2>
+<p>El finiquito paga lo que ya has ganado y se cobra siempre. La indemnización es una compensación extra que solo corresponde en ciertos casos, como algunos despidos, y depende de tu antigüedad y de la causa de la extinción. Se calcula aparte.</p>
+<h2 style="margin-top:34px">Cómo calculamos cada concepto</h2>
+<ol>
+<li><strong>Salario pendiente</strong> = sueldo mensual ordinario ÷ 30 × días pendientes. Con 14 pagas, el sueldo mensual es el bruto anual ÷ 14, y con 12 pagas, ÷ 12.</li>
+<li><strong>Pagas extra</strong> = importe de una paga × días devengados ÷ días del periodo. En el devengo semestral, el periodo es de enero a junio o de julio a diciembre, según tu fecha de baja.</li>
+<li><strong>Vacaciones</strong> = (días devengados − días disfrutados) × valor del día. Los devengados son los días anuales proporcionales al tiempo trabajado en el año. El valor del día es el bruto anual ÷ 365 con días naturales.</li>
+<li><strong>Descuentos</strong>: Seguridad Social del trabajador (6,50 % en indefinido y 6,55 % en temporal) y retención de IRPF con el mismo tipo que tu nómina, calculado con el <a href="sueldario-como-se-calcula.html">método de la AEAT</a>.</li>
+</ol>
+</div></section>
+
+<section class="c"><div class="wrap">
+<h2>Preguntas frecuentes sobre el finiquito</h2>
+<div class="faq prose" style="max-width:780px">
+<details><summary>¿Qué incluye un finiquito?</summary><p>El salario de los días trabajados y no cobrados, la parte proporcional de las pagas extra que no estén prorrateadas y las vacaciones devengadas y no disfrutadas. También pueden aparecer horas extra, comisiones u otros pluses pendientes.</p></details>
+<details><summary>¿El finiquito es lo mismo que la indemnización?</summary><p>No. El finiquito liquida lo que ya has ganado y se paga siempre que termina un contrato. La indemnización es una compensación adicional que solo corresponde en determinados casos, como algunos despidos o el fin de ciertos contratos temporales, y se calcula aparte con otros datos.</p></details>
+<details><summary>¿Pagan IRPF y Seguridad Social por el finiquito?</summary><p>Sí. Es salario, así que lleva retención de IRPF y cotizaciones a la Seguridad Social. La calculadora aplica a todo el importe el mismo tipo de IRPF que tendría tu nómina.</p></details>
+<details><summary>¿Cómo se calculan las vacaciones no disfrutadas?</summary><p>Se calculan los días devengados hasta tu fecha de baja, en proporción al tiempo trabajado en el año, y se restan los que ya has disfrutado. Cada día pendiente se paga según tu sueldo anual dividido entre 365 si son días naturales. Tu convenio puede fijar otra forma de cálculo.</p></details>
+<details><summary>¿Cobro la parte proporcional de las pagas extra?</summary><p>Sí, si tus pagas extra no vienen prorrateadas en la nómina. Normalmente se devengan por semestres (de enero a junio y de julio a diciembre), pero algunos convenios las devengan por años naturales. Si cobras en 12 pagas, ya las recibes cada mes y no hay nada que añadir.</p></details>
+<details><summary>¿Puedo firmar el finiquito «no conforme»?</summary><p>Sí. Si crees que falta algún concepto o que los importes no cuadran, puedes firmar indicando «no conforme» y reclamar después. Las reclamaciones derivadas del contrato de trabajo prescriben al año de terminarse el contrato, así que no conviene dejarlo pasar. Para tu caso concreto, consulta con un abogado laboralista o un sindicato.</p></details>
+<details><summary>¿Qué pasa si dejo la empresa sin avisar con antelación?</summary><p>Si tu convenio o contrato exige un plazo de preaviso y no lo cumples, la empresa puede descontar del finiquito los días de preaviso que falten. Esta calculadora no incluye ese descuento.</p></details>
+</div>
+</div></section>
+
+</main>
+<footer><div class="wrap">
+<div><strong>Sueldario</strong><br>© 2026 Xian Rui Wang. Herramienta informativa: no sustituye a tu nómina real ni a una gestoría.<br><a href="/">&larr; Volver a Cuentario (más herramientas)</a></div>
+<nav aria-label="Legal"><a href="sueldario-aviso-legal.html">Aviso legal</a><a href="sueldario-privacidad.html">Privacidad</a><a href="sueldario-cookies.html">Cookies</a><a href="sueldario-contacto.html">Contacto</a></nav>
+</div></footer>
+<script>/* Sueldario – motor de cálculo 2026 (bruto <-> neto)
+   Fuentes: Orden PJC/297/2026 (BOE-A-2026-7296) y algoritmo de retenciones AEAT 2026. */
+(function (root) {
+  var P = {
+    baseMaxAnual: 5101.20 * 12,
+    ss: { cc: 4.70, mei: 0.15, fp: 0.10, desIndef: 1.55, desTemp: 1.60 },
+    emp: { cc: 23.60, mei: 0.75, desIndef: 5.50, desTemp: 6.70, fogasa: 0.20, fp: 0.60 },
+    tramos: [[12450, .19], [20200, .24], [35200, .30], [60000, .37], [300000, .45], [Infinity, .47]],
+    minPersonal: 5550, desc: [2400, 2700, 4000, 4500], menor3: 2800, gastos: 2000,
+    limites: { s3: [15876, 16342, 16867], s1: [15876, 17644, 19262] }
+  };
+
+  function tarifa(base) {
+    var cuota = 0, prev = 0;
+    for (var i = 0; i < P.tramos.length; i++) {
+      var top = P.tramos[i][0], t = P.tramos[i][1];
+      if (base > prev) cuota += (Math.min(base, top) - prev) * t;
+      prev = top;
+    }
+    return cuota;
+  }
+
+  function reduccion20(rnt) {
+    if (rnt <= 14852) return 7302;
+    if (rnt <= 17673.52) return 7302 - 1.75 * (rnt - 14852);
+    if (rnt < 19747.5) return 2364.34 - 1.14 * (rnt - 17673.52);
+    return 0;
+  }
+
+  function minimoFamiliar(hijos, menores3) {
+    var m = P.minPersonal;
+    for (var i = 0; i < hijos; i++) m += P.desc[Math.min(i, 3)];
+    m += Math.min(menores3, hijos) * P.menor3;
+    return m;
+  }
+
+  function calcular(o) {
+    var bruto = Math.max(0, +o.bruto || 0);
+    var temp = o.contrato === 'temporal';
+    var hijos = Math.max(0, Math.floor(+o.hijos || 0));
+    var m3 = Math.max(0, Math.floor(+o.menores3 || 0));
+    var pagas = +o.pagas === 12 ? 12 : 14;
+    var sit = (o.situacion === 's1' && hijos >= 1) ? 's1' : 's3';
+
+    var baseCot = Math.min(bruto, P.baseMaxAnual);
+    var r = P.ss;
+    var des = temp ? r.desTemp : r.desIndef;
+    var ss = {
+      cc: baseCot * r.cc / 100, mei: baseCot * r.mei / 100,
+      des: baseCot * des / 100, fp: baseCot * r.fp / 100
+    };
+    ss.total = ss.cc + ss.mei + ss.des + ss.fp;
+    var ssPct = r.cc + r.mei + des + r.fp;
+
+    var rnt = Math.max(0, bruto - ss.total - P.gastos);
+    var baseIrpf = Math.max(0, rnt - reduccion20(rnt));
+    var cuota = Math.max(0, tarifa(baseIrpf) - tarifa(minimoFamiliar(hijos, m3)));
+
+    var lim = P.limites[sit][Math.min(hijos, 2)];
+    var tipo = 0;
+    if (bruto > lim && bruto > 0) {
+      var tope = (bruto - lim) * 0.43;
+      if (cuota > tope) cuota = tope;
+      tipo = Math.floor(cuota / bruto * 10000) / 100;
+      if (temp && tipo < 2) tipo = 2;
+      if (tipo > 47) tipo = 47;
+    }
+    var irpf = bruto * tipo / 100;
+    var neto = bruto - ss.total - irpf;
+
+    var empPct = P.emp.cc + P.emp.mei + (temp ? P.emp.desTemp : P.emp.desIndef) + P.emp.fogasa + P.emp.fp;
+    var empCuota = baseCot * empPct / 100;
+
+    return {
+      bruto: bruto, pagas: pagas, ss: ss, ssPct: ssPct, irpf: irpf, tipo: tipo,
+      neto: neto, netoMes12: neto / 12, netoMes14: neto / 14, netoPaga: neto / pagas,
+      empresa: { cuota: empCuota, pct: empPct, coste: bruto + empCuota },
+      exento: bruto > 0 && bruto <= lim
+    };
+  }
+
+  function brutoDesdeNeto(netoAnual, o) {
+    var lo = netoAnual, hi = netoAnual * 3 + 1000, i;
+    for (i = 0; i < 70; i++) {
+      var mid = (lo + hi) / 2;
+      var n = calcular(Object.assign({}, o, { bruto: mid })).neto;
+      if (n < netoAnual) lo = mid; else hi = mid;
+    }
+    return (lo + hi) / 2;
+  }
+
+
+  /* ---------- Finiquito ---------- */
+  var DAY = 86400000;
+  function parseD(d) { var p = String(d).split('-'); return Date.UTC(+p[0], +p[1] - 1, +p[2]); }
+  function diasEntre(a, b) { return Math.round((b - a) / DAY) + 1; }
+
+  function finiquito(o) {
+    var E = parseD(o.baja), S = parseD(o.inicio);
+    if (isNaN(E) || isNaN(S) || E < S || !(o.bruto > 0)) return { error: true };
+    var base = calcular(o);
+    var ey = new Date(E).getUTCFullYear();
+    var ene1 = Date.UTC(ey, 0, 1), dic31 = Date.UTC(ey, 11, 31);
+    var ini = Math.max(S, ene1);
+    var diasAnio = diasEntre(ene1, dic31);
+    var mensual = o.bruto / (+o.pagas === 14 ? 14 : 12);
+    var diario = mensual / 30;
+    var dUlt = Math.min(30, Math.max(0, +o.diasUltimoMes || 0));
+    var salario = diario * dUlt;
+
+    var paga = +o.pagas === 14 ? o.bruto / 14 : 0, extras = 0;
+    if (paga > 0) {
+      if (o.devengo === 'anual') {
+        extras = 2 * paga * Math.min(1, diasEntre(ini, E) / diasAnio);
+      } else {
+        var jul1 = Date.UTC(ey, 6, 1);
+        if (E < jul1) {
+          extras = paga * Math.min(1, diasEntre(ini, E) / diasEntre(ene1, Date.UTC(ey, 5, 30)));
+        } else {
+          extras = paga * Math.min(1, diasEntre(Math.max(S, jul1), E) / diasEntre(jul1, dic31));
+        }
+      }
+    }
+
+    var vacAn = Math.max(1, +o.vacAnuales || 30);
+    var devengadas = vacAn * Math.min(1, diasEntre(ini, E) / diasAnio);
+    var pend = devengadas - Math.max(0, +o.vacDisfrutadas || 0);
+    var valorDia = o.vacTipo === 'lab' ? (o.bruto / 365) * (30 / vacAn) : o.bruto / 365;
+    var vacaciones = pend * valorDia;
+
+    var total = salario + extras + vacaciones;
+    var ss = total * base.ssPct / 100;
+    var irpf = total * base.tipo / 100;
+    return {
+      error: false, salario: salario, diasUltimoMes: dUlt, extras: extras, vacaciones: vacaciones,
+      vacDevengadas: devengadas, vacPend: pend, valorDia: valorDia, bruto: total,
+      ssPct: base.ssPct, ss: ss, tipo: base.tipo, irpf: irpf, neto: total - ss - irpf
+    };
+  }
+
+  var api = { P: P, calcular: calcular, brutoDesdeNeto: brutoDesdeNeto, tarifa: tarifa, finiquito: finiquito };
+  if (typeof module !== 'undefined' && module.exports) module.exports = api; else root.NC = api;
+})(typeof window !== 'undefined' ? window : this);
+</script>
+<script>(function () {
+  var $ = function (s) { return document.querySelector(s); };
+  var eur = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', useGrouping: 'always' });
+  var eur0 = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0, useGrouping: 'always' });
+  var d1 = new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1 });
+  var pct = function (n) { return new Intl.NumberFormat('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n) + ' %'; };
+  var pct0 = function (n) { return new Intl.NumberFormat('es-ES', { maximumFractionDigits: 1 }).format(n) + ' %'; };
+  function radio(n) { return document.querySelector('input[name="' + n + '"]:checked').value; }
+  function int(el, a, b) { var v = Math.floor(+el.value); if (isNaN(v)) v = 0; return Math.min(b, Math.max(a, v)); }
+  function row(l, small, v, cls) {
+    return '<li class="' + (cls || '') + '"><span class="l">' + l + (small ? '<small>' + small + '</small>' : '') + '</span><span class="leader" aria-hidden="true"></span><span class="v">' + v + '</span></li>';
+  }
+  var f = {
+    bruto: $('#bruto'), inicio: $('#inicio'), baja: $('#baja'), dias: $('#dias'),
+    vac: $('#vac'), disf: $('#disf'), sit: $('#situacion'), hijos: $('#hijos'), m3: $('#menores3')
+  };
+
+  function render() {
+    var h = int(f.hijos, 0, 8);
+    var o = {
+      bruto: +f.bruto.value || 0, pagas: +radio('pagas'), contrato: radio('contrato'), situacion: f.sit.value,
+      hijos: h, menores3: Math.min(int(f.m3, 0, 8), h), inicio: f.inicio.value, baja: f.baja.value,
+      diasUltimoMes: int(f.dias, 0, 30), vacAnuales: +f.vac.value || 30, vacTipo: radio('vtipo'),
+      vacDisfrutadas: +f.disf.value || 0, devengo: radio('devengo')
+    };
+    $('#devengo-box').hidden = o.pagas !== 14;
+    var r = NC.finiquito(o);
+    var sheet = $('#sheet');
+    if (r.error) {
+      $('#big').innerHTML = '—';
+      $('#sub').textContent = 'Revisa los datos: la fecha de baja debe ser posterior a la de inicio y el sueldo mayor que 0.';
+      sheet.innerHTML = ''; $('#alert').hidden = true;
+      ['b-neto', 'b-irpf', 'b-ss'].forEach(function (i) { $('#' + i).style.width = '0%'; });
+      ['lg-neto', 'lg-irpf', 'lg-ss'].forEach(function (i) { $('#' + i).innerHTML = ''; });
+      return;
+    }
+    $('#big').innerHTML = eur.format(r.neto) + '<small>netos</small>';
+    $('#sub').innerHTML = 'Total bruto del finiquito: <b>' + eur.format(r.bruto) + '</b>. Se suele cobrar junto a la última nómina.';
+    var b = r.bruto || 1;
+    var pn = Math.max(0, r.neto / b * 100), pi = r.irpf / b * 100, ps = r.ss / b * 100;
+    $('#b-neto').style.width = pn + '%'; $('#b-irpf').style.width = Math.max(0, pi) + '%'; $('#b-ss').style.width = ps + '%';
+    $('#lg-neto').innerHTML = '<b>' + eur0.format(r.neto) + '</b>Para ti · ' + pct0(pn);
+    $('#lg-irpf').innerHTML = '<b>' + eur0.format(r.irpf) + '</b>IRPF · ' + pct0(pi);
+    $('#lg-ss').innerHTML = '<b>' + eur0.format(r.ss) + '</b>Seguridad Social · ' + pct0(ps);
+
+    var vacSmall = d1.format(r.vacPend) + ' días × ' + eur.format(r.valorDia) + ' (devengados ' + d1.format(r.vacDevengadas) + ' días este año)';
+    var extrasSmall = o.pagas === 14 ? 'Parte proporcional de la paga en curso' : 'Con 12 pagas las extras ya van prorrateadas en tu nómina';
+    sheet.innerHTML =
+      row('Salario de ' + r.diasUltimoMes + ' días del último mes', 'Sueldo mensual ÷ 30 × días', eur.format(r.salario)) +
+      row('Pagas extra devengadas', extrasSmall, eur.format(r.extras)) +
+      row('Vacaciones no disfrutadas', vacSmall, eur.format(r.vacaciones)) +
+      row('Total bruto', '', eur.format(r.bruto), 'sum') +
+      row('Seguridad Social', pct(r.ssPct), '−' + eur.format(r.ss), 'neg') +
+      row('Retención de IRPF', 'Mismo tipo que tu nómina: ' + pct(r.tipo), '−' + eur.format(r.irpf), 'neg') +
+      row('Finiquito neto', '', eur.format(r.neto), 'sum');
+    var al = $('#alert');
+    if (r.vacPend < 0) {
+      al.hidden = false;
+      al.textContent = 'Has disfrutado más vacaciones de las devengadas hasta tu fecha de baja. La empresa podría descontar ese importe del finiquito.';
+    } else al.hidden = true;
+  }
+
+  f.baja.addEventListener('change', function () {
+    var p = f.baja.value.split('-');
+    if (p.length === 3) { f.dias.value = Math.min(30, +p[2]); }
+    render();
+  });
+  document.querySelectorAll('input,select').forEach(function (el) {
+    el.addEventListener('input', render); el.addEventListener('change', render);
+  });
+  $('#print').addEventListener('click', function () { window.print(); });
+  render();
+})();
+</script>
+</body>
+</html>

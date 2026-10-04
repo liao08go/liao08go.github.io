@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de porcentajes: calcula, aumenta y descuenta</title>
+<meta name="description" content="Calcula el porcentaje de una cantidad, aplica aumentos y descuentos, con la fórmula y ejemplos resueltos.">
+<link rel="canonical" href="https://liao08go.github.io/calculadora-porcentajes.html">
+<link rel="stylesheet" href="/style.css">
+<meta name="google-adsense-account" content="ca-pub-5765866012796773">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5765866012796773" crossorigin="anonymous"></script>
+</head><body>
+<header class="top"><a class="brand" href="/">Cuentario</a>
+<nav><a href="/">Herramientas</a><a href="/sueldario.html">Sueldario</a><a href="/sobre-nosotros.html">Sobre nosotros</a><a href="/contacto.html">Contacto</a></nav></header>
+<main>
+<article>
+<h1>Calculadora de porcentajes</h1>
+<p class="lead">Elige qué quieres calcular e introduce los valores. El resultado aparece al momento.</p>
+<section class="tool" aria-label="Calculadora">
+<label>Operación
+<select id="op"><option value="of">¿Cuánto es el X % de Y?</option><option value="inc">Aumentar Y un X %</option><option value="dec">Descontar un X % a Y</option><option value="ratio">¿Qué porcentaje es X de Y?</option></select></label>
+<label>X <input id="x" type="number" inputmode="decimal" step="any"></label>
+<label>Y <input id="y" type="number" inputmode="decimal" step="any"></label>
+<button id="go" type="button">Calcular</button>
+<p id="res" role="status" aria-live="polite"></p>
+</section>
+<h2>Cómo se calcula</h2>
+<p>El X % de Y es Y × X / 100. Aumentar un X % es Y × (1 + X/100). Descontar un X % es Y × (1 − X/100). El porcentaje que X representa de Y es X / Y × 100.</p>
+<h2>Ejemplos resueltos</h2>
+<p>El 21 % de 80 es 80 × 21 / 100 = 16,8. Un precio de 50 € con un 15 % de descuento queda en 50 × 0,85 = 42,50 €.</p>
+<h2>Preguntas frecuentes</h2>
+<h3>¿Se pueden usar decimales?</h3><p>Sí. Usa el punto o la coma según tu teclado.</p>
+<h3>¿Qué pasa si Y es 0 en la última operación?</h3><p>La división no está definida y la herramienta te avisa.</p>
+<p class="meta">Última revisión: 2026-10-04. [Añade aquí fuentes y método propio en cada herramienta real.]</p>
+</article>
+<script src="/porcentajes.js"></script>
+</main>
+<footer><nav>
+<a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a><a href="/contacto.html">Contacto</a>
+</nav><p>&copy; 2026 Xian Rui Wang</p></footer>
+</body></html>
